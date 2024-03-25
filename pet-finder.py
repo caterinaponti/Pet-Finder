@@ -20,13 +20,13 @@ csvreader = csv.reader(filename)
 for row in csvreader: #Iterate through the rows of the csv file
 	rows.append(row) #To count number of rows
 
-	pet_type = row[0] #Set the first element of teh row as pet_type 
+	pet_type = row[0] #Set the first element of the row as pet_type 
 	name = row[1]
 	birthdate = row[2]
 	breed = row[3]
 	color = row[4]
 
-	#Check the pet type and create the corrsponding object
+	#Check the pet type and create the corresponding object
 	if pet_type == "Dog":
 		dog = Dog(name, birthdate, breed, color)
 		dog.set_name(name) #set attributes for the created dog object
